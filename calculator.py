@@ -6,6 +6,7 @@ class Calculator(abc.ABC):
     SYMBOLS = "+-*/"
     ZERO_DIVISION_MESSAGE = "Numbers cannot be divided by zero"
 
+    @abc.abstractmethod
     def __init__(self):
         self.latest_result = 0
 
